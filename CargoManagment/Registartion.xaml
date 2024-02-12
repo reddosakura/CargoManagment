@@ -1,0 +1,42 @@
+﻿<Window x:Class="CargoManagment.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CargoManagment"
+        mc:Ignorable="d"
+        Background="#D9D9D9"
+        Title="Window1" Height="619" Width="634">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="31*"/>
+            <RowDefinition Height="64*"/>
+            <RowDefinition Height="56*"/>
+            <RowDefinition Height="65*"/>
+            <RowDefinition Height="56*"/>
+            <RowDefinition Height="65*"/>
+            <RowDefinition Height="56*"/>
+            <RowDefinition Height="65*"/>
+            <RowDefinition Height="27*"/>
+            <RowDefinition Height="60*"/>
+            <RowDefinition Height="58*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="26*"/>
+            <ColumnDefinition Width="165*"/>
+            <ColumnDefinition Width="303*"/>
+            <ColumnDefinition Width="72*"/>
+            <ColumnDefinition Width="26*"/>
+            <ColumnDefinition Width="40*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="registarionBtn" Style="{DynamicResource MainButtonStyle}" Content="Зарегистрироваться" Grid.Row="9" Grid.ColumnSpan="4" FontSize="32" FontWeight="Bold" Grid.RowSpan="1" Grid.Column="1" Click="RegistarionAction"  />
+        <TextBlock Text="Регистрация" FontSize="32" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" Height="64" TextAlignment="Right" HorizontalAlignment="Center" FontWeight="Bold" />
+        <TextBlock Text="Логин:" FontSize="32" Grid.Row="2" Grid.ColumnSpan="3" Grid.Column="1"/>
+        <TextBlock Text="Пароль:" FontSize="32" Grid.Row="4" Grid.ColumnSpan="3" Grid.RowSpan="1" Grid.Column="1"/>
+        <TextBlock FontSize="32" Grid.Row="6" Grid.ColumnSpan="3" Margin="0,1,0,0" Grid.Column="1"><Run Text="Ф"/><Run Language="ru-ru" Text="амилия и имя"/><Run Text=":"/></TextBlock>
+        <TextBox FontSize="32" x:Name="loginTb" Style="{DynamicResource MainTextBoxStyle}" Grid.Row="3" Grid.ColumnSpan="4" Grid.RowSpan="1" Grid.Column="1" />
+        <TextBox FontSize="32" x:Name="passwdTb" Style="{DynamicResource MainTextBoxStyle}" Grid.Row="5" Grid.ColumnSpan="4" Grid.RowSpan="1" Grid.Column="1" />
+        <TextBox FontSize="32" x:Name="fioTb" Style="{DynamicResource MainTextBoxStyle}" Grid.Row="7" Grid.ColumnSpan="4" Grid.RowSpan="1" Grid.Column="1" />
+        <Image Source="/res/drawable/icon_profile circled.png" Grid.Column="3" Grid.RowSpan="1" Grid.Row="1"/>
+    </Grid>
+</Window>
